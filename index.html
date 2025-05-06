@@ -2,44 +2,68 @@
 <html lang="en">
 <head>
     <style>
-        
-        h1{
-             text-align:center;
+        .container{
+            display:flex;
+            gap: 1rem;
+            flex-wrap:wrap;
+           
+
+
         }
-        img {
-            height:300px;
-            width:300px;
-            display:inline;
-        }
-        a {
-            font-size:30px;
-            display:inline;}
-        .red {
-                color:white;
-                background-color:red;
-                text-decoration :none;
-            }
-        .green{
+        .box{
+            flex:1;
+            flex-grow:1;
+            flex-shrink:1;
+            background-color: red;
             color:white;
-            background-color:green;
-            text-decoration:none;
+            padding:45px;
         }
+        .nav-list{
+            display:flex;
+            
+            background-color:green;
+            color:white;
+            
+        }
+        .nav-list li {
+            flex-grow:1;
+            flex-shrink:1;
+            gap:1rem;
+            
+        }
+
+
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recipe Site</title>
+    <title>FLEXSITE!</title>
+    
 </head>
 <body>
-    <a href ="lasagna.html" class="red">lasagna</a>
-    <a href ="ravioli.html" class="green">ravioli</a>
-    <a href ="tacos.html" class="red">tacos</a>
-    <h1>Great-tasting recipes you can make from home</h1>
-    <div>
-        <img src = "https://thecozycook.com/wp-content/uploads/2022/04/Lasagna-Recipe.jpg">
-        <img src ="https://res.cloudinary.com/grow-me/image/fetch/c_fill,h_300,q_auto,w_300/f_auto,fl_lossy/https%3A%2F%2Fres.cloudinary.com%2Fgrow-me%2Fimage%2Ffetch%2Fc_fill%2Ch_300%2Cq_auto%2Cw_300%2Ff_auto%2Cfl_lossy%2Fhttps%253A%252F%252Fthecozycook.com%252Fwp-content%252Fuploads%252F2021%252F09%252FRavioli-Sauce-1.jpg">
-        <img src ="https://res.cloudinary.com/grow-me/image/fetch/c_fill,h_300,q_auto,w_300/f_auto,fl_lossy/https%3A%2F%2Fres.cloudinary.com%2Fgrow-me%2Fimage%2Ffetch%2Fc_fill%2Ch_300%2Cq_auto%2Cw_300%2Ff_auto%2Cfl_lossy%2Fhttps%253A%252F%252Fthecozycook.com%252Fwp-content%252Fuploads%252F2021%252F06%252FBaked-Tacos-3.jpg">
-        <img src =https://www.allrecipes.com/thmb/GF7ba89No8pPfNJLcqd9e2cF-P4=/0x512/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/158140-Spaghetti-sauce-with-ground-beef-DDMFS-4x3-ce598bcb0b304eed966c81f95e24d57b.jpg>
-    </div>
+    <nav class ="nav-list">
+ 
+    <li>Home</li>
+    <li>Lasagna</li>
+    <li>Ravioli</li>
+    <li>Tacos</li>
+    <li>Speghetti</li>
+    <li>Wonton Soup</li>
+    </nav>
+    <br>
+    <div class="container">
+    <div class ="box">1</div>
+    <div class="box">2</div>
+    <div class ="box">3</div>
+    <div class ="box">4</div>
+    <div class ="box">5</div>
+    <div class ="box">6</div>
+    <div class ="box">7</div>
+    <div class ="box">8</div>
+</div>
+
+   
+
+   
     
 </body>
 </html>
