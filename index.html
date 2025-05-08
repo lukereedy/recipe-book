@@ -20,17 +20,20 @@
         .nav-list{
             display:flex;
             background-color:green;
-            color:white;
+            
             padding:15px;
             font-family:impact;
             
             
             
         }
-        .nav-list li {
+        .nav-list a {
             flex-grow:1;
             flex-shrink:1;
-            list-style-type:none;
+            text-decoration:none;
+            color:white;
+            
+            
             
             }
             h1 {
@@ -66,7 +69,14 @@
                 
                 
             }
-
+            .container-x {
+                display:flex;
+                background-color:green;
+                color:white;
+                justify-content:center;
+                
+            }
+            
             
             
             
@@ -95,12 +105,12 @@
     <h1>Delicious Recipes At Home</h1>
     <nav class ="nav-list">
  
-    <li><a href="index.html"></a>HOME</li>
-    <li><a href="lasagna.html"></a>LASAGNA</li>
-    <li><a href="Ravioli.html"></a>RAVIOLI</li>
-    <li><a href="Tacos.html"></a>TACOS</li>
-    <li>SPEGHETTI</li>
-    <li>WONTON SOUP</li>
+    <a href="index.html">HOME</a>
+    <a href="lasagna.html">LASAGNA</a>
+    <a href="Ravioli.html">RAVIOLI</a>
+    <a href="Tacos.html">TACOS</a>
+    <a href="speghetti.html">SPEGHETTI</a>
+    <a href="soup.html">WONTON SOUP</a>
     </nav>
     <br>
     
@@ -120,6 +130,18 @@
     <div><p>Tacos...well because....they're TACOS!</p></div>
     <div><p>Speghetti is everywhere. Dig in!</p></div>
     <div><p>Wonton soup will leave you wanting more!</p></div>
+    </div>
+    <br>
+    
+    <div class="container-x">
+        <p> New recipes arrive monthly so be sure to check back. We reserve no rights to these recipes as they are just a collection of yummy goodness pulled from the internet.
+            <br>
+            From the tasty lasagna to the yummy wonton soup you can never have enough of an arsenal in your kitchen as new recipes keep meals fresh and exciting. 
+
+
+        </p>
+
+
     </div>
     
     
