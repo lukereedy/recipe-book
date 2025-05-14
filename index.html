@@ -2,157 +2,112 @@
 <html lang="en">
 <head>
     <style>
-        .container{
+        nav {
             display:flex;
-            gap: 1rem;}
-            
-            
-           img {
-            flex:1;
-            flex-grow:1;
-            flex-shrink:3;
-            height:auto;
-            width:85px;
-            
-           }
-        
-        
-        .nav-list{
-            display:flex;
-            background-color:green;
-            
-            padding:15px;
-            font-family:impact;
-            
-            
+            justify-content:space-around;
             
         }
-        .nav-list a {
-            flex-grow:1;
-            flex-shrink:1;
-            text-decoration:none;
-            color:white;
+        .red{
+            background-color:red;
+        }
+        .green{
+            background-color:green;
+        }
+        a {
+        text-decoration:none;
+        font-family:impact;
+        color:white;
+        padding:10px;
+        }
+        nav :hover {
+            padding:8px;
+            background-color:black;
             
-            
-            
-            }
-            h1 {
-                color:black;
-                font-family:sans-serif;
-                display:flex;
-                justify-content:center;
+        }
+
+        .header{
+            display:flex;
+            font-family:sans-serif;
+            justify-content:center;
+            flex-wrap:nowrap;
+        }
+        .stripe {
+            display:flex;
+            padding:2px;
+            background-color:lightgreen;
+        }
+        .container {
+            display:flex;
+            flex-direction:row;
+            background-color:black;
+            padding:25px;
+            justify-content:flex-start;
+            align-items:center;
+            border-radius:25px;
             }
 
-            .box{
-                display:flex;
-                gap: 1rem;
-                justify-content:center;
-                
-                
-                
-                
-                
-
-            }
-            .box div{
-                background-color:green;
-                color:white;
-                font-size:11px;
-                text-align:center;
-                
-                flex:1;
-                
-
-
-                
-                
-                
-                
-            }
-            .container-x {
-                display:flex;
-                background-color:green;
-                color:white;
-                justify-content:center;
-                
-            }
-            
-            
-            
-            
-            
-            
-            
-                
-            
-            
-            
-                
-                
-                
-                
             
         
-
-
+            
+            
+        
+        .box img{
+            max-width:100%;
+            margin:0;
+            
+        }
+        .text {
+            color:white;
+             margin:10px;
+            
+        }
+        
+        
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FLEXSITE!</title>
-    
+    <title>RECIPE BOOK</title>
 </head>
 <body>
-    <h1>Delicious Recipes At Home</h1>
-    <nav class ="nav-list">
- 
-    <a href="index.html">HOME</a>
-    <a href="lasagna.html">LASAGNA</a>
-    <a href="Ravioli.html">RAVIOLI</a>
-    <a href="Tacos.html">TACOS</a>
-    <a href="speghetti.html">SPEGHETTI</a>
-    <a href="soup.html">WONTON SOUP</a>
+    <div class="header">
+    <h3>DELICIOUS RECIPES YOU CAN MAKE FROM HOME</h3>
+    </div>
+    <nav>
+        <a class = "red" href="index.html">HOME</a>
+    <a class = "green" href="lasagna.html">LASAGNA</a>
+    <a class = "red" href="ravioli.html">RAVIOLI</a>
+    <a class = "green" href="tacos.html">TACOS</a>
+    <a class = "red" href="speghetti.html">SPEGHETTI</a>
+    <a class = "green" href="soup.html">WONTON SOUP</a>
+    
+
+
     </nav>
     <br>
-    
-    <div class="container">
-        <img src ="https://thecozycook.com/wp-content/uploads/2022/04/Lasagna-Recipe.jpg">
-        <img src ="https://res.cloudinary.com/grow-me/image/fetch/c_fill,h_300,q_auto,w_300/f_auto,fl_lossy/https%3A%2F%2Fres.cloudinary.com%2Fgrow-me%2Fimage%2Ffetch%2Fc_fill%2Ch_300%2Cq_auto%2Cw_300%2Ff_auto%2Cfl_lossy%2Fhttps%253A%252F%252Fthecozycook.com%252Fwp-content%252Fuploads%252F2021%252F09%252FRavioli-Sauce-1.jpg">
-        <img src ="https://res.cloudinary.com/grow-me/image/fetch/c_fill,h_300,q_auto,w_300/f_auto,fl_lossy/https%3A%2F%2Fres.cloudinary.com%2Fgrow-me%2Fimage%2Ffetch%2Fc_fill%2Ch_300%2Cq_auto%2Cw_300%2Ff_auto%2Cfl_lossy%2Fhttps%253A%252F%252Fthecozycook.com%252Fwp-content%252Fuploads%252F2021%252F06%252FBaked-Tacos-3.jpg">
-        <img src ="https://img.sndimg.com/food/image/upload/f_auto,c_thumb,q_55,w_860,ar_3:2/v1/img/recipes/22/78/2/xy39o2sOTtudkgyDgZtv_spaghettisauce.jpg">
-        <img src ="https://www.erinliveswhole.com/wp-content/uploads/2024/09/chickenwontonsoup-17.jpg">
-        
-    </div>
+    <div class="stripe"></div>
     <br>
-
+   <div class="container">
     <div class="box">
-    <div><p>Lasagna so good even cats love it!</p></div>
-    <div><p>Ravioli always makes for a great appetizer!</p></div>
-    <div><p>Tacos...well because....they're TACOS!</p></div>
-    <div><p>Speghetti is everywhere. Dig in!</p></div>
-    <div><p>Wonton soup will leave you wanting more!</p></div>
+      <img src="Simply-Recipes-Best-Classic-Lasagna-Lead-1-b67f9c8bb82448d7ac34807d0d62244e (Small).jpeg">
     </div>
-    <br>
-    
-    <div class="container-x">
-        <p> New recipes arrive monthly so be sure to check back. We reserve no rights to these recipes as they are just a collection of yummy goodness pulled from the internet.
-            <br>
-            From the tasty lasagna to the yummy wonton soup you can never have enough of an arsenal in your kitchen as new recipes keep meals fresh and exciting. 
-
-
-        </p>
-
-
+    <div class="text">
+        <h3>CHEESY LASAGNA</h3>
+    <p>Lasagna can be described as a delicious and hearty baked pasta dish with layers of pasta, rich tomato sauce, and melted cheese. It's often described as a comforting, savory, and layered dish that is both customizable and satisfying. </p></div>
+   </div>
+   <br>
+   <div class="container">
+    <div class="box">
+        <img src="ravioli-2 (Small).jpg">
     </div>
-    
-    
-    
-    
+    <div class="text">
+        <h3>DELICIOUS RAVIOLI</h3>
+        <p>Ravioli are stuffed pasta pillows, traditionally square, with a filling of meat, cheese, or vegetables sandwiched between two thin layers of pasta. They are often served with a sauce or in broth.</p> </div>
+    </div>
 
 
+   </div>
 
-   
-
-   
+    
     
 </body>
 </html>
